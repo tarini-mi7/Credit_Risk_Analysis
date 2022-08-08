@@ -2,11 +2,11 @@
 Credit risk analysis using scikit-learn and imbalanced-learn on sample credit data.
 
 ## Overview
-This analysis evaluates various machine learning models to predict individual customer credit risk. The dataset used to train the models was from LendingClub, "a peer-to-peer lending services company." After preprocessing, the dataset consists 68,817 entries, and is heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
+This analysis evaluates various machine learning models to predict individual customer credit risk. The dataset used to train the models is from LendingClub, "a peer-to-peer lending services company." After preprocessing, the dataset consists of 68,817 entries, and is heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
 
 ![High-Low Risk Split](Resources/risk_split.png)
 
-The machine learning algorithms used were:
+The Machine Learning algorithms compared in this analysis:
 * RandomOverSampler
 * SMOTE
 * ClusterCentroids
@@ -17,7 +17,7 @@ The machine learning algorithms used were:
 The models were run and then evaluated for performance and accuracy at predicting credit risk.
 
 ## Results
-In examining the results we will look at the Balanced Accuracy Score as well as the Imbalanced Classification Report (ICR) from each model. Of particular interest in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row, since we're primarily interested in our ability to detect high credit risk individuals. 
+In examining the results, we will look at the Balanced Accuracy Score as well as the Imbalanced Classification Report (ICR) from each model. Of particular interest in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row, since we're primarily interested in our ability to detect high credit risk individuals. 
 
 The following results are presented in ascending levels of performance, based on their Balanced Accuracy Scores, starting with the worst-performing model and moving to the best.
 
